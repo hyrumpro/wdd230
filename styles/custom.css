@@ -6,5 +6,27 @@ body {
 
 nav a {
     color: #fff;
+
 }
 
+
+nav {
+    display: flex;
+    justify-content: center; /* Center the flex items (nav links) horizontally */
+    align-items: center; /* Center the flex container (nav) vertically */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Display links vertically in a single column for mobile view */
+}
+
+@media screen and (min-width: 768px) {
+    nav ul {
+        flex-direction: row;
+    }
+
+}
