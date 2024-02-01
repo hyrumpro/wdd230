@@ -113,6 +113,16 @@ main {
     z-index: 2;
 }
 
+
+#map {
+    height: 400px;
+    width: 100%;
+ }
+
+
+
+
+
 /* Responsive styles */
 @media only screen and (max-width: 600px) {
     main {

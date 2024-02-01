@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./styles/larger.css">
     <link rel="icon" href="images/favicon.ico">
     <title>Hyrum Perez - WDD 230 - Web Frontend Development</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 </head>
 <body>
 
@@ -54,12 +55,17 @@
     </section>
 </main>
 
+ <div>
+  <div id="map"></div>  </div>
+
+
 <footer>
     <p>&copy; <span id="currentYear"></span> Hyrum Perez, Peru, All rights reserved © </p>
     <p id="lastModified"></p>
 </footer>
 
 <script src="scripts/getdates.js" defer></script>
+
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -70,8 +76,29 @@
             nav.classList.toggle('show-menu');
         });
     });
+
 </script>
 
+<script>
+
+    function initMap() {
+
+        var city = { lat: -8.112, lng: -79.0288 }; 
+
+
+        var zoomLevel = 18;
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+            center: city,
+            zoom: zoomLevel
+        });
+    }
+  </script>
+
+
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBx2dWCPaSv6cbPfGUevuZoJt4FD0_EzUY&callback=initMap">
+</script>
 
 </body>
 </html>
