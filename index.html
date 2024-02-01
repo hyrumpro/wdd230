@@ -11,7 +11,6 @@
     <meta property="og:url" content="https://hyrumpro.github.io/wdd230/">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
     <link rel="stylesheet" href="./styles/base.css">
-    <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/custom.css">
     <link rel="stylesheet" href="./styles/larger.css">
@@ -24,8 +23,9 @@
     <img src="images/profileimage.jpg" alt="Hyrum Perez">
     <h1>Hyrum Perez</h1>
 </header>
-
+<div class="hamburger" id="hamburger-icon">&#9776;</div>
 <nav>
+
     <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Site Plan</a></li>
@@ -44,7 +44,7 @@
             <li><a href="lesson02/design-principles.html">Activity 1</a></li>
             <li><a href="#">Activity 2</a></li>
         </ul>
-    </section>s
+    </section>
 
     <section class="card">
         <h2>Information</h2>
@@ -60,6 +60,19 @@
 </footer>
 
 <script src="scripts/getdates.js" defer></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const hamburgerIcon = document.getElementById('hamburger-icon');
+        const nav = document.querySelector('nav');
+
+        hamburgerIcon.addEventListener('click', function () {
+            nav.classList.toggle('show-menu');
+        });
+    });
+</script>
+
+
 </body>
 </html>
 
