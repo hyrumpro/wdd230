@@ -1,0 +1,171 @@
+/* --- General Styling --- */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+
+/* Overall Navbar Styles */
+.navbar-light  {
+    background-color: #005493;
+    color: #fff;
+}
+
+.navbar-light .navbar-brand {
+    color: #fff !important;
+    font-weight: bold;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #e9d8a6;
+}
+
+
+
+
+
+/* Main Styling */
+
+.button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.button:focus {
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+
+.hero {
+    background-image: url('../images/RIVERSIDE.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 500px;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+h1 {
+    color: #F7F3E8;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    flex: 0 1 300px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.event-card, .spotlight-item {
+    margin-bottom: 20px;
+}
+
+.spotlight-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.events {
+    background-color: #dbedee;
+}
+
+.weather {
+    background-color: #e2f2e5;
+}
+
+.spotlight {
+    background-color: #e8f0f7;
+}
+
+
+
+
+
+#weather-celsius {
+     color: #000000;
+}
+
+
+
+
+
+
+
+/* --- Media Queries for Responsiveness --- */
+@media (max-width: 768px) {
+
+    .row {
+        flex-direction: column;
+    }
+
+    .col-md-6 {
+        flex: 0 0 100%;
+    }
+
+    .main-navigation ul {
+        display: none;
+    }
+
+    .main-navigation.open ul {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+    }
+
+
+    .menu-toggle {
+        display: block;
+    }
+
+}
+
+
