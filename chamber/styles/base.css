@@ -126,11 +126,23 @@ h2 {
 
 
 
-
 #weather-celsius {
      color: #000000;
 }
 
+
+
+
+
+
+.footer {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.footer a {
+    color: #333; /
+}
 
 
 
