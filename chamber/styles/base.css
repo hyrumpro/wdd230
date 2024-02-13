@@ -34,6 +34,9 @@ body {
 
 
 
+
+
+
 /* Main Styling */
 
 .button {
@@ -80,58 +83,30 @@ h1 {
     color: #F7F3E8;
 }
 
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+#member-spotlight {
+    background-color: #f0f0f0;
 }
 
-.card {
-    flex: 0 1 300px;
-    margin: 10px;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+#member-h1 {
+    color: #0056b3;
 }
 
-h2 {
-    color: #333;
-    margin-bottom: 15px;
+
+#events {
+    background-color: #f5f7ff;
 }
 
-.event-card, .spotlight-item {
-    margin-bottom: 20px;
-}
 
-.spotlight-item img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-bottom: 10px;
-}
-
-.events {
-    background-color: #dbedee;
-}
 
 .weather {
     background-color: #e2f2e5;
 }
-
-.spotlight {
-    background-color: #e8f0f7;
-}
-
 
 
 
 #weather-celsius {
      color: #000000;
 }
-
-
-
 
 
 

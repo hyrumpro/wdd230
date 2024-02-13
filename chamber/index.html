@@ -69,42 +69,62 @@
         </div>
     </section>
     <br>
-  <div class="row">
-    <section class="card events">
-        <h2>Current Events</h2>
-        <div class="event-card">
-            <h3>Community Cleanup Day</h3>
-            <p>Date: February 25, 2024</p>
-            <p>Location: Central Park</p>
-        </div>
-        <div class="event-card">
-            <h3>Annual Business Awards Dinner</h3>
-            <p>Date: February 26, 2024</p>
-            <p>Location: Riverside Motel</p>
-        </div>
-        <div class="event-card">
-            <h3>Community Charity Golf Tournament</h3>
-            <p>Date: April 14, 2024</p>
-            <p>Location: ArtRiver Country Club</p>
-        </div>
-    </section>
 
-    <section class="card weather">
-        <h2>Weather in Trujillo</h2>
-        <div id="weather-card">
-        </div>
-    </section>
+    <div class="container py-4">
 
-    <section class="card spotlight">
-        <h2>Member Spotlights</h2>
-        <div class="spotlight-item">
-            <img src="./images/favicon.ico" alt="Company Logo">
-            <h3>Riverside Chamber of Commerce</h3>
-            <p>Short description of the company</p>
+        <div class="p-5 mb-4 bg-body-tertiary rounded-3" id="member-spotlight">
+            <div class="container-fluid py-5">
+                <h1 class="display-5 fw-bold" id="member-h1">Member Spotlights</h1>
+                <img src="./images/favicon.ico" class="img-fluid"  alt="Company Logo">
+                <p class="col-md-8 fs-4">The Riverside Chamber of Commerce is committed to fostering a thriving business environment
+                    within our vibrant community.  We offer networking opportunities, advocacy, and resources to support the success
+                    of local businesses, ultimately strengthening the Riverside economy.
+                </p>
+            </div>
         </div>
-    </section>
-  </div>
+
+        <div class="row align-items-md-stretch">
+            <div class="col-md-6" id="events">
+                <div class="h-100 p-5 text-bg-dark rounded-3">
+                    <h2 class="center text-centered">Current Events</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <h4>Community Cleanup Day</h4>
+                            <p>Date: February 25, 2024</p>
+                            <p>Location: Central Park</p>
+                        </li>
+                        <li class="list-group-item">
+                            <h4>Annual Business Awards Dinner</h4>
+                            <p>Date: February 26, 2024</p>
+                            <p>Location: Riverside Motel</p>
+                        </li>
+                        <li class="list-group-item">
+                            <h4>Community Charity Golf Tournament</h4>
+                            <p>Date: April 14, 2024</p>
+                            <p>Location: ArtRiver Country Club</p>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="col-md-6" id="jumbotron-weather">
+                <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+                    <h2>Weather</h2>
+                    <div id="weather-card">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
+
+
+
+
+
+
+
+
 
 
 <footer class="footer bg-light py-3">
