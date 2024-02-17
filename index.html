@@ -21,7 +21,7 @@
 <body>
 
 <header>
-    <img src="images/profileimage.jpg" alt="Hyrum Perez">
+    <img src="images/profileimage.webp" alt="Hyrum Perez">
     <h1>Hyrum Perez</h1>
 </header>
 <div class="hamburger" id="hamburger-icon">&#9776;</div>
@@ -38,6 +38,18 @@
 
 
 <main>
+    <div class="overlay">
+        <h3>Utah Temple</h3>
+    </div>
+    <picture>
+        <source srcset="images/utah-temple-mobile.webp" media="(max-width: 600px)">  <source srcset="images/utah-temple.webp" media="(min-width: 601px)">
+        <img src="images/utah-temple.jpg" class="hero-image" alt="Utah temple">
+        <div class="overlay">
+            <h3>Utah Temple</h3>
+        </div>
+    </picture>
+
+
     <h2>WDD 230: Web Frontend Development</h2>
     <hr />
     <section class="card">
@@ -45,6 +57,7 @@
         <ul class="subcard">
             <li><a href="lesson02/design-principles.html">Activity 1</a></li>
             <li><a href="#">Activity 2</a></li>
+            <li><a href="lesson03/images/landscape.webp">WebP</a></li>
         </ul>
     </section>
 
