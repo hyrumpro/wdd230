@@ -63,10 +63,18 @@
 
 <main>
     <section class="hero">
+        <picture id="img-temp">
+            <source srcset="./images/wdd230-org-small.webp" media="(max-width: 767px)">
+            <source srcset="./images/wdd230-org-medium.webp" media="(max-width: 991px)">
+            <img src="./images/wdd230-org-large.webp" class="img-fluid" alt="Riverside Chamber of Commerce - Welcome">
+        </picture>
+
+        <!--
         <div class="hero-content">
             <h1>Welcome to the Riverside Chamber of Commerce</h1>
             <a href="#" class="button">Join Today</a>
         </div>
+        -->
     </section>
     <br>
 
@@ -74,8 +82,8 @@
 
         <div class="p-5 mb-4 bg-body-tertiary rounded-3" id="member-spotlight">
             <div class="container-fluid py-5">
-                <h1 class="display-5 fw-bold" id="member-h1">Member Spotlights</h1>
-                <img src="./images/favicon.ico" class="img-fluid"  alt="Company Logo">
+                <h2 class="display-5 fw-bold" id="member-h2">Member Spotlights</h2>
+                <img src="./images/Icon.webp" class="img-fluid"  alt="Company Logo">
                 <p class="col-md-8 fs-4">The Riverside Chamber of Commerce is committed to fostering a thriving business environment
                     within our vibrant community.  We offer networking opportunities, advocacy, and resources to support the success
                     of local businesses, ultimately strengthening the Riverside economy.
@@ -116,11 +124,10 @@
             </div>
         </div>
     </div>
+
+
+
 </main>
-
-
-
-
 
 
 
@@ -145,9 +152,14 @@
 
 
 
-</body>
 
-    <script src="scripts/main.js" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<script src="scripts/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+</body>
 
 </html>

@@ -32,35 +32,12 @@ body {
 
 
 
+
+
+
+
+
 /* Main Styling */
-
-
-
-.hero-image {
-    width: 100%;
-    height: auto;
-    display: block;
-    position: relative;
-}
-
-
-
-.overlay {
-    position: absolute;
-    bottom: 10px;
-    left: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 5px;
-    white-space: nowrap;
-}
-
-
-
-
-
-
-
 
 .button {
     background-color: #007bff;
@@ -96,22 +73,34 @@ body {
     justify-content: center;
     color: white;
     height: 500px;
+    margin-bottom: 50px;
+}
+
+#img-temp {
+
+    height: auto;
+    object-fit: cover;
 }
 
 .hero-content {
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-bottom: 15px;
 }
 
 h1 {
     color: #F7F3E8;
+    background-color: rgba(0, 0, 0, 0.5);
 }
+
 
 #member-spotlight {
     background-color: #f0f0f0;
 }
 
-#member-h1 {
+#member-h2 {
     color: #0056b3;
+    font-size: 40px;
 }
 
 
@@ -129,6 +118,7 @@ h1 {
 
 #weather-celsius {
      color: #000000;
+    font-size: 40px;
 }
 
 
@@ -139,7 +129,7 @@ h1 {
 }
 
 .footer a {
-    color: #333; /
+    color: #333;
 }
 
 
