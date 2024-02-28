@@ -144,7 +144,9 @@ main {
     width: 100%;
  }
 
-
+#visit-counter {
+    font-size: 1.2em;
+}
 
 
 

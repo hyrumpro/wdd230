@@ -5,30 +5,156 @@ body {
 }
 
 
-/* Overall Navbar Styles */
-.navbar-light  {
-    background-color: #005493;
-    color: #fff;
+*, ::after, ::before {
+    box-sizing: border-box;
 }
 
-.navbar-light .navbar-brand {
-    color: #fff !important;
+
+
+.container {
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.col-md-6 {
+    width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.rounded-3 {
+    border-radius: 0.5rem;
+}
+
+
+.bg-body-tertiary {
+    background-color: #e9ecef;
+    padding: 1.25rem;
+    border: 1px solid #dee2e6;
+    border-radius: .3rem;
+}
+
+
+.container.py-4 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+
+.p-5.mb-4.bg-body-tertiary.rounded-3 {
+    padding: 3rem !important;
+    margin-bottom: 1.5rem;
+    background-color: #e9ecef;
+    border-radius: .3rem;
+}
+
+.container-fluid.py-5 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+
+.display-5.fw-bold {
+    font-size: 2.5rem;
     font-weight: bold;
 }
 
-.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
-    color: #fff;
+
+.fs-4 {
+    font-size: 1.25rem;
 }
 
-.navbar-light .navbar-nav .nav-link {
-    color: #fff;
-    margin: 0 10px;
-    transition: color 0.3s ease;
+.list-group-item {
+    background-color: transparent;
+    padding: .5rem 0;
+    border: none;
 }
 
-.navbar-nav .nav-link:hover {
-    color: #e9d8a6;
+.h-100 {
+    height: 100%;
 }
+
+
+.text-bg-dark {
+    color: #fff !important;
+    background-color: rgba(33, 37, 41, 1) !important;
+    padding: 1.25rem;
+    border-radius: .3rem;
+}
+
+
+.rounded-3 {
+    border-radius: .3rem;
+}
+
+.border {
+    border: 1px solid #dee2e6;
+}
+
+
+.center, .text-centered {
+    text-align: center;
+}
+
+.row.align-items-md-stretch {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-md-6 {
+    width: 50%;
+}
+
+
+
+
+.navbar {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem; /* Adjust padding as needed */
+    background-color: #f0f0f0; /* Example background color */
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.hamburger {
+    display: none; /* Hide by default on larger screens */
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.show-menu {
+    display: block;
+}
+
 
 
 
@@ -64,7 +190,7 @@ body {
 
 
 .hero {
-    background-image: url('../images/RIVERSIDE.png');
+    /* background-image: url('../images/RIVERSIDE.png'); */
     background-size: cover;
     background-position: center;
     min-height: 350px;
@@ -130,6 +256,7 @@ h1 {
 
 .footer a {
     color: #333;
+
 }
 
 
@@ -148,9 +275,6 @@ h1 {
         flex: 0 0 100%;
     }
 
-    .main-navigation ul {
-        display: none;
-    }
 
     .main-navigation.open ul {
         display: block;
@@ -161,11 +285,38 @@ h1 {
         background-color: #333;
     }
 
-
     .menu-toggle {
         display: block;
     }
 
+    .list-group-item {
+        padding: 0.75rem 1.25rem;
+    }
+
+    .rounded {
+        border-radius: 0.25rem;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        flex-direction: column;
+        padding: 1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        display: none;
+    }
+
+    .nav-links li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
 }
+
 
 
