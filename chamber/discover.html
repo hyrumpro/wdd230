@@ -81,7 +81,8 @@
             </div>
             <div class="sidebar-content">
                 <h2>Upcoming Events</h2>
-                <img data-src="./images/riverside-1.webp" alt="Caption 1" class="lazy">
+                <img src="https://t3.ftcdn.net/jpg/02/48/42/64/240_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
+                     data-src="./images/riverside-1.webp" alt="Caption 1" class="lazy">
                 <p>LOorem Ipsum dolor exdtreus extrution Oorem Ipsum dolor exdtreus extrution</p>
 
             </div>
@@ -98,7 +99,8 @@
         </aside>
         <main class="main-content">
             <div class="card">
-                <img data-src="./images/riverside-1.webp" alt="Caption 1" class="lazy">
+                <img src="https://t3.ftcdn.net/jpg/02/48/42/64/240_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
+                     data-src="./images/riverside-1.webp" alt="Caption 1" class="lazy">
                 <div class="card-body">
                     <h3>Image Title</h3>
                     <p>Image description goes here...</p>
@@ -108,7 +110,8 @@
                 </div>
             </div>
             <div class="card">
-                <img data-src="./images/riverside-1.webp" alt="Caption 2" class="lazy">
+                <img src="https://t3.ftcdn.net/jpg/02/48/42/64/240_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
+                     data-src="./images/riverside-1.webp" alt="Caption 2" class="lazy">
                 <div class="card-body">
                     <h3>Image Title</h3>
                     <p>Image description goes here...</p>
@@ -118,7 +121,7 @@
                 </div>
             </div>
             <div class="card">
-                <img data-src="./images/riverside-1.webp" alt="Caption 3" class="lazy">
+                <img src="https://t3.ftcdn.net/jpg/02/48/42/64/240_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg" data-src="./images/riverside-1.webp" alt="Caption 3" class="lazy">
                 <div class="card-body">
                     <h3>Image Title</h3>
                     <p>Image description goes here...</p>
@@ -128,7 +131,8 @@
                 </div>
             </div>
             <div class="card">
-                <img data-src="./images/riverside-1.webp" alt="Caption 3" class="lazy">
+                <img src="https://t3.ftcdn.net/jpg/02/48/42/64/240_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
+                     data-src="./images/riverside-1.webp" alt="Caption 3" class="lazy">
                 <div class="card-body">
                     <h3>Image Title</h3>
                     <p>Image description goes here...</p>
@@ -138,7 +142,8 @@
                 </div>
             </div>
             <div class="card">
-                <img data-src="./images/riverside-1.webp" alt="Caption 3" class="lazy">
+                <img src="https://t3.ftcdn.net/jpg/02/48/42/64/240_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
+                     data-src="./images/riverside-1.webp" alt="Caption 3" class="lazy">
                 <div class="card-body">
                     <h3>Image Title</h3>
                     <p>Image description goes here...</p>
@@ -148,7 +153,8 @@
                 </div>
             </div>
             <div class="card">
-                <img data-src="./images/riverside-1.webp" alt="Caption 3" class="lazy">
+                <img  src="https://t3.ftcdn.net/jpg/02/48/42/64/240_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
+                      data-src="./images/riverside-1.webp" alt="Caption 3" class="lazy">
                 <div class="card-body">
                     <h3>Image Title</h3>
                     <p>Image description goes here...</p>
@@ -208,7 +214,7 @@
 
         localStorage.setItem('lastVisit', now.getTime().toString());
 
-        let lazyImages = [].slice.call(document.querySelectorAll('.lazy'));
+        let lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
 
         if ("IntersectionObserver" in window) {
             let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
@@ -226,11 +232,15 @@
                 lazyImageObserver.observe(lazyImage);
             });
         } else {
+
             lazyImages.forEach(function(lazyImage) {
                 lazyImage.src = lazyImage.dataset.src;
+                lazyImage.classList.remove("lazy");
             });
         }
     });
+
+
 
 </script>
 
