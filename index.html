@@ -106,28 +106,26 @@
 
 <script>
 
-    // Keep your initMap function mostly as is with a slight change:
     function initMap() {
         const city = { lat: -8.112, lng: -79.0288 };
         const zoomLevel = 18;
 
-        // Instead of directly creating the map, store the options for later:
         const mapOptions = {
             center: city,
             zoom: zoomLevel
         };
 
-        return mapOptions; // Return the map options
+        return mapOptions;
     }
 
-    // Lazy-loading logic
+
     const mapDiv = document.getElementById('map');
     let mapLoaded = false;
 
     const observer = new IntersectionObserver((entries) => {
         if (entries[0].isIntersecting && !mapLoaded) {
-            const mapOptions = initMap(); // Get mapOptions when needed
-            new google.maps.Map(mapDiv, mapOptions); // Create the map
+            const mapOptions = initMap();
+            new google.maps.Map(mapDiv, mapOptions);
             mapLoaded = true;
             observer.unobserve(mapDiv);
         }

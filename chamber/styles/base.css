@@ -261,6 +261,100 @@ h1 {
 
 
 
+/* discover HTML */
+
+
+
+.container1 {
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+    gap: 20px;
+}
+
+.sidebar {
+    background-color: #f7f7f7;
+    padding: 10px;
+}
+
+.main-content {
+    border: 1px solid;
+    width: 100%;
+}
+
+.sidebar-content {
+    padding: 20px;
+    border: 1px solid;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card img {
+    width: 100%;
+    display: block;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.card img:hover {
+    transform: scale(1.05);   /* Slightly zoom in  */
+    opacity: 0.85;            /* Slightly reduce opacity */
+}
+
+.card .card-body {
+    padding: 20px; /* Padding inside the card */
+}
+
+.card .card-footer {
+    background-color: #f1f1f1; /* Footer background for visual separation */
+    padding: 10px 20px;
+    text-align: center;
+    border-top: 1px solid #eaeaea; /* Line to separate footer from content */
+}
+
+@media (max-width: 768px) {
+    .container1 {
+        grid-template-columns: 1fr; /* Single column for mobile */
+    }
+
+    .sidebar,
+    .main-content {
+        padding: 10px;
+    }
+
+    .card {
+        margin-bottom: 20px; /* Space between cards on mobile */
+    }
+
+    .sidebar-content {
+        padding: 20px;
+        margin: 20px;
+        border: 1px solid;
+    }
+
+}
+
+.lazy {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.lazy.loaded {
+    opacity: 1;
+}
+
+
+
 
 
 
