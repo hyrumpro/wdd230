@@ -127,8 +127,8 @@ body {
     display: block;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem; /* Adjust padding as needed */
-    background-color: #f0f0f0; /* Example background color */
+    padding: 1rem 2rem;
+    background-color: #f0f0f0;
 }
 
 .navbar-brand {
@@ -136,7 +136,7 @@ body {
 }
 
 .hamburger {
-    display: none; /* Hide by default on larger screens */
+    display: none;
     cursor: pointer;
 }
 
@@ -307,24 +307,26 @@ h1 {
 }
 
 .card img:hover {
-    transform: scale(1.05);   /* Slightly zoom in  */
-    opacity: 0.85;            /* Slightly reduce opacity */
+    transform: scale(1.05);
+    opacity: 0.85;
 }
 
 .card .card-body {
-    padding: 20px; /* Padding inside the card */
+    padding: 20px;
 }
 
 .card .card-footer {
-    background-color: #f1f1f1; /* Footer background for visual separation */
+    background-color: #f1f1f1;
     padding: 10px 20px;
     text-align: center;
-    border-top: 1px solid #eaeaea; /* Line to separate footer from content */
+    border-top: 1px solid #eaeaea;
 }
+
+
 
 @media (max-width: 768px) {
     .container1 {
-        grid-template-columns: 1fr; /* Single column for mobile */
+        grid-template-columns: 1fr;
     }
 
     .sidebar,
@@ -333,7 +335,7 @@ h1 {
     }
 
     .card {
-        margin-bottom: 20px; /* Space between cards on mobile */
+        margin-bottom: 20px;
     }
 
     .sidebar-content {
