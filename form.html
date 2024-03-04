@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/form.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <title>Form Pro</title>
+
+</head>
+<body>
+
+<header>
+    <img src="images/profileimage.webp" alt="Hyrum Perez">
+    <h1>Hyrum Perez</h1>
+</header>
+
+
+<main>
+    <form action="record.html" method="get">
+        <fieldset>
+            <legend>User Information</legend>
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username"
+                       pattern="[a-zA-Z0-9]{8,}" required
+                       title="Username must be at least 8 alphanumeric characters">
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"
+                       pattern="[a-zA-Z0-9]{8,}" required
+                       title="Password must be at least 8 alphanumeric characters">
+            </div>
+            <div>
+                <label for="passwordConfirm">Confirm Password:</label>
+                <input type="password" id="passwordConfirm" name="passwordConfirm" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"
+                       pattern=".+@byui\.edu" required
+                       title="A valid byui.edu email address">
+            </div>
+            <div>
+                <label for="rating">Page Rating (1-10):</label>
+                <input type="range" id="rating" name="rating" min="1" max="10" step="1"
+                       onchange="updateRatingValue(this.value)">
+                <output id="ratingValue">5</output>
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </fieldset>
+    </form>
+</main>
+
+<footer>
+    <p>&copy; <span id="currentYear"></span> Hyrum Perez, Peru, All rights reserved © </p>
+    <p id="lastModified"></p>
+</footer>
+
+
+<script>
+    const passInput = document.getElementById('password');
+    const passConfirm = document.getElementById('passwordConfirm');
+
+    function updateRatingValue(value) {
+        document.getElementById('ratingValue').textContent = value;
+    }
+
+    document.querySelector('form').addEventListener('submit', (event) => {
+        if (passInput.value !== passConfirm.value) {
+            alert("Passwords must match!");
+            passInput.value = '';
+            passConfirm.value = '';
+            passInput.focus();
+            event.preventDefault();
+        }
+    });
+
+</script>
+</body>
+</html>
+
+
