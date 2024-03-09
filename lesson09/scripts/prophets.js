@@ -18,7 +18,7 @@ async function getProphetData() {
         console.error('There has been a problem with your fetch operation:', error);
     }
 }
-
+//Display
 
 const displayProphets = (prophets) => {
     prophets.forEach((prophet) => {
