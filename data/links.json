@@ -1,0 +1,73 @@
+{
+  "lessons": [
+    {
+      "lesson": "01",
+      "links": [
+        { "url": "/week-01/lesson-01-activity.html", "title": "Introduction Activity"},
+        { "url": "/week-01/lesson-01-reading.pdf", "title": "Background Reading" }
+      ]
+    },
+    {
+      "lesson": "02",
+      "links": [
+        { "url": "/week-02/lesson-02-activity.html", "title": "Concept Exploration" },
+        { "url": "/week-02/lesson-02-quiz.html", "title": "Knowledge Check" }
+      ]
+    },
+    {
+      "lesson": "03",
+      "links": [
+        { "url": "/week-03/lesson-03-activity.html", "title": "Activity 1" },
+        { "url": "/week-03/lesson-03-resource.pdf", "title": "Supplemental Material" }
+      ]
+    },
+    {
+      "lesson": "04",
+      "links": [
+        { "url": "/week-04/lesson-04-activity.html", "title": "Activity 2" },
+        { "url": "/week-04/lesson-04-reading.pdf", "title": "Reading" }
+      ]
+    },
+    {
+      "lesson": "05",
+      "links": [
+        { "url": "/week-05/lesson-05-activity.html", "title": "Activity 3" },
+        { "url": "/week-05/lesson-05-quiz.html", "title": "Quiz" }
+      ]
+    },
+    {
+      "lesson": "06",
+      "links": [
+        { "url": "/week-06/lesson-06-activity.html", "title": "Concept Exploration" },
+        { "url": "/week-06/lesson-06-project.html", "title": "Mini-Project" }
+      ]
+    },
+    {
+      "lesson": "07",
+      "links": [
+        { "url": "/week-07/lesson-07-activity.html", "title": "Interactive Exercise" },
+        { "url": "/week-07/lesson-07-video.mp4", "title": "Tutorial Video" }
+      ]
+    },
+    {
+      "lesson": "08",
+      "links": [
+        { "url": "/week-08/lesson-08-discussion.html", "title": "Discussion Forum" },
+        { "url": "/week-08/lesson-08-reading.pdf", "title": "Chapter Reading" }
+      ]
+    },
+    {
+      "lesson": "09",
+      "links": [
+        { "url": "/week-09/lesson-09-quiz.html", "title": "Knowledge Check Quiz" },
+        { "url": "/week-09/lesson-09-case-study.html", "title": "Case Study Analysis" }
+      ]
+    },
+    {
+      "lesson": "10",
+      "links": [
+        { "url": "/week-10/lesson-10-project.html", "title": "Final Project" }
+      ]
+    }
+  ]
+}
