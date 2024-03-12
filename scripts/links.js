@@ -43,4 +43,6 @@ function displayLinks(lessons) { // Rename parameter for clarity
 
 
 
+
+
 getLinks();

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riverside Business Alliance Chamber of Commerce</title>
+    <meta name="description" content="Riverside Business Alliance of Commerce acts as a regional economic catalyst, leadership convener, and community champion. We promote business through member services, economic and community development, and public policy that balances economic prosperity.">
+    <meta name="author" content="Hyrum">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Riverside Business Alliance Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./images/RIVERSIDE.png">
+    <meta property="og:url" content="https://hyrumpro.github.io/wdd230/chamber/index.html">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:title" content="Riverside Business Alliance Chamber of Commerce">
+    <meta name="twitter:image" content="./images/RIVERSIDE.png">
+    <meta name="twitter:url" content="your_website_url">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+
+
+
+</head>
+
+
+
+
+<body>
+
+
+<header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggler" data-toggle="open-navbar1">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <a href="#">
+                    <h4>Riverside Chamber of <span>Commerce</span></h4>
+                </a>
+            </div>
+
+            <div class="navbar-menu" id="open-navbar1">
+                <ul class="navbar-nav">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./discover.html">Discover</a></li>
+                    <li><a href="./join.html">Membership</a></li>
+                    <li class="active"><a href="#">Directory</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+<div class="container">
+    <h1>Chamber Members</h1>
+    <div class="controls">
+        <button id="gridView">Grid View</button>
+        <button id="listView">List View</button>
+    </div>
+    <div id="memberList" class="grid-view"> </div>
+</div>
+</main>
+
+<footer class="footer bg-light py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                &copy; 2024 Riverside Business Alliance Chamber of Commerce
+            </div>
+            <div class="col-md-6 text-md-end">
+                <a href="#" class="me-3">Contact Us</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+<script src="scripts/main.js"></script>
+<script>
+    const memberList = document.getElementById('memberList');
+    const gridBtn = document.getElementById('gridView');
+    const listBtn = document.getElementById('listView');
+    let members = []; // Store fetched members globally
+
+    fetch('./data/members.json')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            members = data;
+            displayMembers(members, 'grid-view'); // Initial display
+        })
+        .catch(error => {
+            console.error('Error fetching or processing data:', error);
+            displayErrorMessage(); // Handle the error appropriately
+        });
+
+    function displayMembers(members, viewType) {
+        memberList.innerHTML = '';
+
+        members.forEach(member => {
+            const card = createMemberCard(member);
+            memberList.appendChild(card);
+        });
+
+        memberList.classList.remove('grid-view', 'list-view');
+        memberList.classList.add(viewType);
+    }
+
+    function createMemberCard(member) {
+        const card = document.createElement('div');
+        card.classList.add('member-card');
+
+        const img = document.createElement('img');
+        img.src = member.image;
+        img.alt = member.name; // For accessibility
+        card.appendChild(img);
+
+        const name = document.createElement('h3');
+        name.textContent = member.name;
+        card.appendChild(name);
+
+        // Add other elements (address, phone, etc.) similarly...
+
+        return card;
+    }
+
+    function displayErrorMessage() {
+        memberList.innerHTML = '<p class="error-message">Error loading member data.</p>';
+    }
+
+    gridBtn.addEventListener('click', () => displayMembers(members, 'grid-view'));
+    listBtn.addEventListener('click', () => displayMembers(members, 'list-view'));
+
+</script>
+<script src="scripts/navbar.js"></script>
+
+</body>
+
+</html>

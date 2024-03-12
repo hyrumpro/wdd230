@@ -1,0 +1,65 @@
+[
+    {
+      "name": "Acme Corporation",
+      "address": "123 Main Street, Anytown, CA",
+      "phone": "(555) 123-4567",
+      "website": "https://www.acme.com",
+      "image": "images/Acme.webp",
+      "membershipLevel": "Gold",
+      "description": "A leading provider of innovative widgets."
+    },
+    {
+      "name": "Baker's Delight",
+      "address": "456 Sweet Avenue, Bakertown, NY",
+      "phone": "(555) 987-6543",
+      "website": "https://www.bakersdelight.com",
+      "image": "images/bakers-delight.webp",
+      "membershipLevel": "Silver",
+      "description": "The best baked goods in town."
+    },
+    {
+      "name": "Zenith Consulting",
+      "address": "789 Business Park Drive, Zenith City, TX",
+      "phone": "(555) 555-1212",
+      "website": "https://www.zenithconsulting.com",
+      "image": "images/zenith.webp",
+      "membershipLevel": "Bronze",
+      "description": "Top-notch business consulting services."
+    },
+    {
+      "name": "Tech Innovations Inc.",
+      "address": "123 Tech Lane, Innovation City, 45678",
+      "phone": "123-456-7890",
+      "website": "https://techinnovations.example.com",
+      "image": "images/Techinnovations.webp",
+      "membershipLevel": "Gold",
+      "description": "Leading the way in tech advancements."
+    },
+    {
+      "name": "Green Future",
+      "address": "987 Eco Road, Green Town, 54321",
+      "phone": "987-654-3210",
+      "website": "https://greenfuture.example.com",
+      "image": "images/greenFuture.webp",
+      "membershipLevel": "Silver",
+      "description": "Committed to a greener tomorrow."
+    },
+    {
+      "name": "Creative Minds",
+      "address": "456 Imagination Ave, Creativity City, 67890",
+      "phone": "456-789-0123",
+      "website": "https://creativeminds.example.com",
+      "image": "images/creative-minds.webp",
+      "membershipLevel": "Bronze",
+      "description": "Innovating the future of art and design."
+    },
+    {
+      "name": "Healthy Living",
+      "address": "321 Wellness Way, Health City, 98765",
+      "phone": "321-654-9870",
+      "website": "https://healthyliving.example.com",
+      "image": "images/healthyLiving.webp",
+      "membershipLevel": "NP-Membership",
+      "description": "Promoting a healthy lifestyle for all."
+    }
+]
