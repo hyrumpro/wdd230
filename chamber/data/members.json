@@ -30,7 +30,7 @@
       "name": "Tech Innovations Inc.",
       "address": "123 Tech Lane, Innovation City, 45678",
       "phone": "123-456-7890",
-      "website": "https://techinnovations.example.com",
+      "website": "https://techinnovations.com",
       "image": "images/Techinnovations.webp",
       "membershipLevel": "Gold",
       "description": "Leading the way in tech advancements."
@@ -39,7 +39,7 @@
       "name": "Green Future",
       "address": "987 Eco Road, Green Town, 54321",
       "phone": "987-654-3210",
-      "website": "https://greenfuture.example.com",
+      "website": "https://greenfuture.com",
       "image": "images/greenFuture.webp",
       "membershipLevel": "Silver",
       "description": "Committed to a greener tomorrow."
@@ -48,7 +48,7 @@
       "name": "Creative Minds",
       "address": "456 Imagination Ave, Creativity City, 67890",
       "phone": "456-789-0123",
-      "website": "https://creativeminds.example.com",
+      "website": "https://creativeminds.com",
       "image": "images/creative-minds.webp",
       "membershipLevel": "Bronze",
       "description": "Innovating the future of art and design."
@@ -57,7 +57,7 @@
       "name": "Healthy Living",
       "address": "321 Wellness Way, Health City, 98765",
       "phone": "321-654-9870",
-      "website": "https://healthyliving.example.com",
+      "website": "https://healthyliving.com",
       "image": "images/healthyLiving.webp",
       "membershipLevel": "NP-Membership",
       "description": "Promoting a healthy lifestyle for all."
