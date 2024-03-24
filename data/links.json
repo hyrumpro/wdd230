@@ -1,72 +1,165 @@
 {
   "lessons": [
     {
-      "lesson": "01",
+      "week": "01",
       "links": [
-        { "url": "/week-01/lesson-01-activity.html", "title": "Introduction Activity"},
-        { "url": "/week-01/lesson-01-reading.pdf", "title": "Background Reading" }
+        {
+          "url": "https://byui-cse.github.io/wdd230-course/lesson01/naming-conventions.html",
+          "title": "Learning Activities"
+        },
+        {
+          "url": "https://byui-cse.github.io/wdd230-course/lesson01/web-dev-standards.html",
+          "title": "File and Folder Naming Conventions"
+        },
+        {
+          "url": "https://byui-cse.github.io/wdd230-course/lesson01/holygrail-layout.html",
+          "title": "Course Web Development Standards"
+        },
+        {
+          "url": "https://byui-cse.github.io/wdd230-course/lesson01/holygrail-layout.html",
+          "title": "Page Layout Review"
+        },
+        {
+          "url": "https://byui-cse.github.io/wdd230-course/lesson01/applied-javascript.html",
+          "title": "Applied JavaScript"
+        }
       ]
     },
     {
-      "lesson": "02",
+      "week": "02",
       "links": [
-        { "url": "/week-02/lesson-02-activity.html", "title": "Concept Exploration" },
-        { "url": "/week-02/lesson-02-quiz.html", "title": "Knowledge Check" }
+        {
+          "url": "https://byui-cse.github.io/wdd230-course/lesson02/social-media-meta.html",
+          "title": "Favicon"
+        },
+        {
+          "url": "https://byui-cse.github.io/wdd230-course/lesson02/social-media-meta.html",
+          "title": "Social Media Meta"
+        },
+        {
+          "url": "https://byui-cse.github.io/wdd230-course/lesson02/normalize.html",
+          "title": "CSS Normalize and Reset"
+        },
+        {
+          "url": "https://byui-cse.github.io/wdd230-course/lesson02/design-principles.html",
+          "title": "Design Principles"
+        },
+        {
+          "url": "https://byui-cse.github.io/wdd230-course/lesson02/media-queries.htmll",
+          "title": "Responsive Design: CSS Media Queries"
+        }
       ]
     },
     {
-      "lesson": "03",
+      "week": "03",
       "links": [
-        { "url": "/week-03/lesson-03-activity.html", "title": "Activity 1" },
-        { "url": "/week-03/lesson-03-resource.pdf", "title": "Supplemental Material" }
+        {
+          "url": "https://byui-cse.github.io/wdd230-course/lesson03/combinators.html",
+          "title": "CSS Combinators"
+        },
+        {
+          "url": "https://byui-cse.github.io/wdd230-course/lesson03/specificity.html",
+          "title": "CSS Specificity"
+        },
+        {
+          "url": "https://byui-cse.github.io/wdd230-course/lesson03/pseudo-elements.html",
+          "title": "CSS Pseudo-Elements"
+        },
+        {
+          "url": "https://byui-cse.github.io/wdd230-course/lesson03/responsive-menu.html",
+          "title": "Responsive Menu"
+        }
       ]
     },
     {
-      "lesson": "04",
+      "week": "04",
       "links": [
-        { "url": "/week-04/lesson-04-activity.html", "title": "Activity 2" },
-        { "url": "/week-04/lesson-04-reading.pdf", "title": "Reading" }
+        {
+          "url": "https://byui-cse.github.io/wdd230-course/lesson04/pseudo-classes.html",
+          "title": "CSS Pseudo-classes"
+        },
+        {
+          "url": "https://byui-cse.github.io/wdd230-course/lesson04/css-common.html",
+          "title": "CSS Common Interview Questions"
+        },
+        {
+          "url": "https://byui-cse.github.io/wdd230-course/lesson04/ux-page-load-speed.html",
+          "title": "Performance: Page Load"
+        }
       ]
     },
     {
-      "lesson": "05",
+      "week": "05",
       "links": [
-        { "url": "/week-05/lesson-05-activity.html", "title": "Activity 3" },
-        { "url": "/week-05/lesson-05-quiz.html", "title": "Quiz" }
+        {
+          "url": "https://byui-cse.github.io/wdd230-course/lesson05/position.html",
+          "title": "CSS Position"
+        },
+        {
+          "url": "https://byui-cse.github.io/wdd230-course/lesson05/dom-manipulation.html",
+          "title": "DOM Manipulation"
+        }
       ]
     },
     {
-      "lesson": "06",
+      "week": "06",
       "links": [
-        { "url": "/week-06/lesson-06-activity.html", "title": "Concept Exploration" },
-        { "url": "/week-06/lesson-06-project.html", "title": "Mini-Project" }
+        {
+          "url": "https://byui-cse.github.io/wdd230-course/lesson06/webp.html",
+          "title": "WebP Image Format"
+        },
+        {
+          "url": "https://byui-cse.github.io/wdd230-course/lesson06/responsive-images.html",
+          "title": "Responsive Images"
+        }
       ]
     },
     {
-      "lesson": "07",
+      "week": "07",
       "links": [
-        { "url": "/week-07/lesson-07-activity.html", "title": "Interactive Exercise" },
-        { "url": "/week-07/lesson-07-video.mp4", "title": "Tutorial Video" }
+        {
+          "url": "https://byui-cse.github.io/wdd230-course/lesson07/lazyload.html",
+          "title": "Native Lazy Loading of Images"
+        },
+        {
+          "url": "https://byui-cse.github.io/wdd230-course/lesson07/localStorage.html",
+          "title": "JS localStorage"
+        }
       ]
     },
     {
-      "lesson": "08",
+      "week": "08",
       "links": [
-        { "url": "/week-08/lesson-08-discussion.html", "title": "Discussion Forum" },
-        { "url": "/week-08/lesson-08-reading.pdf", "title": "Chapter Reading" }
+        {
+          "url": "https://byui-cse.github.io/wdd230-course/lesson08/tables.html",
+          "title": "HTML Tables"
+        },
+        {
+          "url": "https://byui-cse.github.io/wdd230-course/lesson08/forms.html",
+          "title": "HTML Forms"
+        }
       ]
     },
     {
-      "lesson": "09",
+      "week": "09",
       "links": [
-        { "url": "/week-09/lesson-09-quiz.html", "title": "Knowledge Check Quiz" },
-        { "url": "/week-09/lesson-09-case-study.html", "title": "Case Study Analysis" }
+        {
+          "url": "https://byui-cse.github.io/wdd230-course/lesson09/json.html",
+          "title": "JavaScript Object Notation (JSON)"
+        },
+        {
+          "url": "https://byui-cse.github.io/wdd230-course/lesson09/fetch.html",
+          "title": "Fetch"
+        }
       ]
     },
     {
-      "lesson": "10",
+      "week": "10",
       "links": [
-        { "url": "/week-10/lesson-10-project.html", "title": "Final Project" }
+        {
+          "url": "https://byui-cse.github.io/wdd230-course/lesson10/api-weather.html",
+          "title": "API: Weather Information"
+        }
       ]
     }
   ]
