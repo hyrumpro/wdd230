@@ -1,0 +1,14 @@
+{
+  "scooters": [
+    { "model": "Honda Metropolitan", "maxPersons": 1, "halfDayPrice": 30, "fullDayPrice": 50 },
+    { "model": "Honda Dio 110", "maxPersons": 2, "halfDayPrice": 40, "fullDayPrice": 60 },
+    { "model": "Honda PCX150", "maxPersons": 2, "halfDayPrice": 45, "fullDayPrice": 70 }
+  ],
+  "atvs": [
+    { "model": "Honda Pioneer 1000", "maxPersons": 4, "halfDayPrice": 120, "fullDayPrice": 200 }
+  ],
+  "jeeps": [
+    { "model": "Jeep Wrangler 4-door", "maxPersons": 5, "halfDayPrice": 90, "fullDayPrice": 150, "description": "Manual with A/C" },
+    { "model": "Jeep Wrangler 2-door", "maxPersons": 4, "halfDayPrice": 80, "fullDayPrice": 130, "description": "Open air, manual" }
+  ]
+}

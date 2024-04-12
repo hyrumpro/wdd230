@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>~Scoots~ Rental - Rentals</title>
+    <meta name="description" content="Explore the rental options and prices for scooters, jeeps, and ATVs at ~Scoots~ Rental in Cozumel.">
+    <meta name="author" content="~Scoots~ Rental Hyrum">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hyrumpro.github.io/wdd230/finalProject">
+    <meta property="og:title" content="~Scoots~ Rental - Rentals">
+    <meta property="og:image" content="./images/scoot-rental-hero.png">
+    <meta property="og:description" content="Explore the rental options and prices for scooters, jeeps, and ATVs at ~Scoots~ Rental in Cozumel.">
+    <link rel="stylesheet" href="./styles/base2.css">
+</head>
+<body>
+<header>
+    <nav aria-label="Main Navigation">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./rentals.html">Rentals</a></li>
+            <li><a href="./reservations.html">Reservations</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="contact-info">
+        <p><strong>Phone:</strong> <a href="tel:123-456-7890">123-456-7890</a></p>
+        <p><strong>Email:</strong> <a href="mailto:info@scootsrental.com">info@scootsrental.com</a></p>
+    </div>
+</header>
+
+<main>
+    <section id="rentals" aria-labelledby="rentals-heading">
+        <h1 id="rentals-heading">Rental Options</h1>
+        <div class="rental-options">
+            <article class="rental-option">
+                <h2>Honda Motor Scooters</h2>
+                <img src="images/honda-scooter.webp" alt="Honda Motor Scooter" width="400" height="300">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Model</th>
+                        <th>Max. Persons</th>
+                        <th>Half Day (3 hrs)</th>
+                        <th>Full Day</th>
+                    </tr>
+                    </thead>
+                    <tbody id="scooter-prices"></tbody>
+                </table>
+            </article>
+
+            <article class="rental-option">
+                <h2>Side-by-Side ATVs</h2>
+                <img src="images/honda-atv.webp" alt="Honda ATV" width="400" height="300">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Model</th>
+                        <th>Max. Persons</th>
+                        <th>Half Day (3 hrs)</th>
+                        <th>Full Day</th>
+                    </tr>
+                    </thead>
+                    <tbody id="atv-prices"></tbody>
+                </table>
+            </article>
+
+            <article class="rental-option">
+                <h2>Jeeps</h2>
+                <img src="images/jeep-wrangler.webp" alt="Jeep Wrangler" width="400" height="300">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Model</th>
+                        <th>Max. Persons</th>
+                        <th>Half Day (3 hrs)</th>
+                        <th>Full Day</th>
+                    </tr>
+                    </thead>
+                    <tbody id="jeep-prices"></tbody>
+                </table>
+            </article>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="social-media-links">
+        <a href="https://facebook.com/scootsrental" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook page">
+            <img src="./images/facebook-icon.svg" alt="Facebook" width="30" height="30">
+        </a>
+        <a href="https://twitter.com/scootsrental" target="_blank" rel="noopener noreferrer" aria-label="Visit our Twitter profile">
+            <img src="./images/twitter-icon.svg" alt="Twitter" width="30" height="30">
+        </a>
+        <a href="https://instagram.com/scootsrental" target="_blank" rel="noopener noreferrer" aria-label="Visit our Instagram page">
+            <img src="https://static.cdninstagram.com/rsrc.php/v3/yb/r/lswP1OF1o6P.png" alt="Instagram" width="30" height="30">
+        </a>
+    </div>
+    <p>&copy; 2024 ~Scoots~ Rental. All rights reserved.</p>
+</footer>
+
+<script src="./scripts/rentals.js"></script>
+</body>
+</html>

@@ -10,7 +10,6 @@ body {
 }
 
 
-
 .container {
     width: 80%;
     max-width: 1100px;
@@ -190,7 +189,7 @@ body {
 
 
 .hero {
-    /* background-image: url('../images/RIVERSIDE.png'); */
+    background-image: url('../images/RIVERSIDE.png');
     background-size: cover;
     background-position: center;
     min-height: 350px;
@@ -221,12 +220,45 @@ h1 {
 
 
 #member-spotlight {
-    background-color: #f0f0f0;
+    padding: 20px;
+    background-color: #f8f9fa;
 }
 
-#member-h2 {
-    color: #0056b3;
-    font-size: 40px;
+#member-spotlight h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#spotlight-list {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+#spotlight-list li {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#spotlight-list h3 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+#spotlight-list p {
+    margin-bottom: 10px;
+}
+
+#spotlight-list img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 5px;
 }
 
 

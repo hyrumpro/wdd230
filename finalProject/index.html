@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the rental options and prices for scooters, jeeps, and ATVs at ~Scoots~ Rental in Cozumel.">
+    <meta name="author" content="~Scoots~ Rental Hyrum">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hyrumpro.github.io/wdd230/finalProject">
+    <meta property="og:title" content="~Scoots~ Rental - Rentals">
+    <meta property="og:image" content="./images/scoot-rental-hero.png">
+    <meta property="og:description" content="Explore the rental options and prices for scooters, jeeps, and ATVs at ~Scoots~ Rental in Cozumel.">
+    <title>~Scoots~ Rental</title>
+    <link rel="stylesheet" href="./styles/base.css">
+
+</head>
+<body>
+<header>
+    <nav aria-label="Main Navigation">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./rentals.html">Rentals</a></li>
+            <li><a href="./reservations.html">Reservations</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="contact-info">
+        <p><strong>Phone:</strong> <a href="tel:123-456-7890">123-456-7890</a></p>
+        <p><strong>Email:</strong> <a href="mailto:info@scootsrental.com">info@scootsrental.com</a></p>
+    </div>
+</header>
+
+<main>
+    <section id="hero" aria-labelledby="hero-heading">
+        <h1 id="hero-heading">Welcome to ~Scoots~ Rental</h1>
+        <p>Explore the stunning island of Cozumel with our top-notch scooters, jeeps, and ATVs!</p>
+        <a href="./reservations.html" class="cta-button">Make a Reservation</a>
+    </section>
+
+    <section id="rental-types" aria-labelledby="rental-types-heading">
+        <h2 id="rental-types-heading">Rental Types</h2>
+        <ul>
+            <li>
+                <h3>Honda Motor Scooters</h3>
+                <p>Zip around the island with our reliable Honda scooters, perfect for solo riders or couples.</p>
+            </li>
+            <li>
+                <h3>Side-by-Side ATVs</h3>
+                <p>Explore the rugged terrain of Cozumel with our powerful side-by-side ATVs, accommodating up to 4 people.</p>
+            </li>
+            <li>
+                <h3>Jeeps</h3>
+                <p>Discover the hidden gems of Cozumel in style with our well-maintained jeeps, ideal for families and groups.</p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="weather" aria-labelledby="weather-heading">
+        <h2 id="weather-heading">Current Weather in Cozumel</h2>
+        <div id="weather-info">
+            <p><strong>Temperature:</strong> 28°C</p>
+            <p><strong>Humidity:</strong> 75%</p>
+            <p><strong>Conditions:</strong> Partly Cloudy</p>
+            <img src="./images/cloudy.svg" alt="Partly Cloudy" width="50" height="50">
+        </div>
+    </section>
+
+    <section id="testimonials" aria-labelledby="testimonials-heading">
+        <h2 id="testimonials-heading">What Our Customers Say</h2>
+        <blockquote>
+            <p>"I had an amazing experience with ~Scoots~ Rental! The staff was friendly and helpful, and the scooters were in great condition. I highly recommend them for exploring Cozumel!"</p>
+            <cite>- John Doe, USA</cite>
+        </blockquote>
+        <blockquote>
+            <p>"Renting a jeep from ~Scoots~ was the best decision we made during our trip to Cozumel. We were able to visit so many beautiful places that we wouldn't have seen otherwise. Thank you, ~Scoots~!"</p>
+            <cite>- Jane Smith, Canada</cite>
+        </blockquote>
+    </section>
+
+    <div id="high-temp-message" class="closeable-message" aria-label="Today's high temperature message">
+        <p>Today's High Temperature: <span id="high-temp">32</span>°C</p>
+        <button id="close-message" aria-label="Close message">Close</button>
+    </div>
+</main>
+
+<footer>
+    <div class="social-media-links">
+        <a href="https://facebook.com/scootsrental" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook page">
+            <img src="./images/facebook-icon.svg" alt="Facebook" width="30" height="30">
+        </a>
+        <a href="https://twitter.com/scootsrental" target="_blank" rel="noopener noreferrer" aria-label="Visit our Twitter profile">
+            <img src="./images/twitter-icon.svg" alt="Twitter" width="30" height="30">
+        </a>
+        <a href="https://instagram.com/scootsrental" target="_blank" rel="noopener noreferrer" aria-label="Visit our Instagram page">
+            <img src="https://static.cdninstagram.com/rsrc.php/v3/yb/r/lswP1OF1o6P.png" alt="Instagram" width="30" height="30">
+        </a>
+    </div>
+    <p>&copy; 2024 ~Scoots~ Rental. All rights reserved.</p>
+</footer>
+
+
+<script src="scripts/orders.js"></script>
+</body>
+</html>

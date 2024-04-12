@@ -119,4 +119,41 @@ Promise.all([fetchCurrentWeatherData(), fetchForecastData()])
 
 
 
+function getRandomCompanies(companies, count) {
+    const shuffledCompanies = companies.sort(() => 0.5 - Math.random());
+    return shuffledCompanies.slice(0, count);
+}
+
+
+
+
+fetch('data/members.json')
+    .then(response => response.json())
+    .then(data => {
+        const silverOrGoldCompanies = data.filter(company => company.membershipLevel === 'Silver' || company.membershipLevel === 'Gold');
+        const randomCompanies = getRandomCompanies(silverOrGoldCompanies, 3);
+        console.log("dat company:", data)
+        displayCompanies(randomCompanies);
+    })
+    .catch(error => console.error('Error fetching company data:', error));
+
+function displayCompanies(companies) {
+    const spotlightContainer = document.getElementById('spotlight-list');
+    spotlightContainer.innerHTML = '';
+
+    companies.forEach(company => {
+        const companyItem = document.createElement('li');
+        companyItem.innerHTML = `
+            <h3>${company.name}</h3>
+            <p>${company.membershipLevel} Member</p>
+            <img src="${company.image}" alt="${company.name}">
+            <p>Address: ${company.address}</p>
+            <p>Phone: ${company.phone}</p>
+            <p>Website: ${company.website}</p>
+            <p>Description: ${company.description}</p>
+        `;
+        spotlightContainer.appendChild(companyItem);
+    });
+}
+
 
