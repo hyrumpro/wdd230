@@ -7,13 +7,11 @@ fetch(apiUrl)
     .then(data => {
         const weatherInfo = document.getElementById('weather-info');
         const highTemp = document.getElementById('high-temp');
-
         weatherInfo.innerHTML = `
-      <p>Current Temperature: ${data.main.temp}°C</p>
-      <p>Humidity: ${data.main.humidity}%</p>
-      <p>Tomorrow's Temperature at 15:00: ${data.main.temp_max}°C</p>
-      <p>${data.weather[0].main}: ${data.weather[0].description}</p>
-      <img src="https://openweathermap.org/img/w/${data.weather[0].icon}.png" alt="${data.weather[0].description}">
+      <p><strong>Temperature:</strong> ${data.main.temp}°C</p>
+      <p><strong>Humidity:</strong> ${data.main.humidity}%</p>
+      <p><strong>Conditions:</strong> ${data.weather[0].main}</p>
+      <img src="https://openweathermap.org/img/w/${data.weather[0].icon}.png" alt="${data.weather[0].description}" width="50" height="50">
     `;
 
         highTemp.textContent = data.main.temp_max;
